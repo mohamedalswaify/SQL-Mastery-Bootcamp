@@ -173,7 +173,11 @@ SELECT first_name + ' ' + last_name AS full_name, salary FROM employees;
 -- Q2: IT_PROG with salary > 5000
 SELECT last_name, job_id, salary FROM employees WHERE job_id = 'IT_PROG' AND salary > 5000;
 
+<<<<<<< HEAD
 -- Q3: Show last_name and hire date  Hired after 2007 after that sorting data by salary desending
+=======
+-- Q3: Hired after 2007
+>>>>>>> 322f10a29734bb6fd4ed8c541cdee283db34c734
 SELECT last_name, hire_date FROM employees WHERE hire_date > '2007-01-01' ORDER BY hire_date DESC;
 
 ------------------------------------------------------------

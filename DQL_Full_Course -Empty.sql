@@ -16,12 +16,21 @@
 -- SELECT column1, column2, ...
 -- FROM table_name
 -- [WHERE condition]
+<<<<<<< HEAD
+=======
+-- [GROUP BY column1, column2, ...]
+-- [HAVING group_condition]
+>>>>>>> 322f10a29734bb6fd4ed8c541cdee283db34c734
 -- [ORDER BY column1, column2, ... [ASC|DESC]]
 
 -- 🔹 Operators:
 --   ➕ Arithmetic: +, -, *, /
 --   🔁 Comparison: =, !=, <>, <, <=, >, >=
+<<<<<<< HEAD
 --   🧠 Logical: AND, OR
+=======
+--   🧠 Logical: AND, OR, NOT
+>>>>>>> 322f10a29734bb6fd4ed8c541cdee283db34c734
 --   🧮 Range: BETWEEN ... AND ...
 --   📋 List: IN (...)
 --   🔍 Pattern: LIKE 'pattern'
@@ -33,7 +42,10 @@
 --   📅 Dates: GETDATE(), DATEADD(), DATEDIFF(), YEAR(), MONTH(), DAY()
 --   🔄 Conversion: CAST(), CONVERT()
 --   ⚙️ Conditional: CASE, IIF()
+<<<<<<< HEAD
 --   ⚙️ Group Functions: Count() ,Max() ,Min() ,Sum() ,AVG()
+=======
+>>>>>>> 322f10a29734bb6fd4ed8c541cdee283db34c734
 
 ------------------------------------------------------------
 -- 🔰 BEGINNER LEVEL TASKS
