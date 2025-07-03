@@ -35,7 +35,28 @@
 --   🔢 Numbers: ROUND(), CEILING(), FLOOR()
 --   📅 Dates: GETDATE(), DATEADD(), DATEDIFF(), YEAR(), MONTH(), DAY()
 --   🔄 Conversion: CAST(), CONVERT()
---   ⚙️ Conditional: CASE, IIF()
+--   ⚙️ Conditional: CASE
+-- 🔗 JOIN TYPES:
+
+--   🔄 INNER JOIN:
+--     Retrieves only the rows that have matching values in both tables.
+
+--   ⬅️ LEFT JOIN:
+--     Retrieves all rows from the left table, and the matched rows from the right table.
+--     If there is no match, the result is NULL on the right side.
+
+--   ➡️ RIGHT JOIN:
+--     Retrieves all rows from the right table, and the matched rows from the left table.
+--     If there is no match, the result is NULL on the left side.
+
+--   🔁 FULL OUTER JOIN:
+--     Retrieves all rows from both tables, whether they match or not.
+--     Unmatched rows from either side will return NULL for the other side.
+
+--   ✳️ CROSS JOIN:
+--     Returns the Cartesian product of the two tables.
+--     Every row from the first table is combined with every row from the second table.
+
 
 -- 🧠 This course demonstrates how to use SELECT in practical contexts, from basic retrieval to advanced logic and multi-table operations.
 ------------------------------------------------------------
@@ -164,6 +185,36 @@ FROM employees
 WHERE hire_date LIKE '%07' OR salary < 3000;
 
 ------------------------------------------------------------
+-- 🧪 JOIN EXAMPLES:
+------------------------------------------------------------
+
+-- 🔄 INNER JOIN Example:
+SELECT e.name, d.name
+FROM employees e
+INNER JOIN departments d ON e.department_id = d.department_id;
+
+-- ⬅️ LEFT JOIN Example:
+SELECT e.name, d.name
+FROM employees e
+LEFT JOIN departments d ON e.department_id = d.department_id;
+
+-- ➡️ RIGHT JOIN Example:
+SELECT e.name, d.name
+FROM employees e
+RIGHT JOIN departments d ON e.department_id = d.department_id;
+
+-- 🔁 FULL OUTER JOIN Example:
+SELECT e.name, d.name
+FROM employees e
+FULL OUTER JOIN departments d ON e.department_id = d.department_id;
+
+-- ✳️ CROSS JOIN Example:
+SELECT e.name, j.title
+FROM employees e
+CROSS JOIN jobs j;
+
+
+------------------------------------------------------------
 -- 🧠 QUESTIONS & EXERCISES – BEGINNER LEVEL
 ------------------------------------------------------------
 
@@ -173,11 +224,7 @@ SELECT first_name + ' ' + last_name AS full_name, salary FROM employees;
 -- Q2: IT_PROG with salary > 5000
 SELECT last_name, job_id, salary FROM employees WHERE job_id = 'IT_PROG' AND salary > 5000;
 
-<<<<<<< HEAD
 -- Q3: Show last_name and hire date  Hired after 2007 after that sorting data by salary desending
-=======
--- Q3: Hired after 2007
->>>>>>> 322f10a29734bb6fd4ed8c541cdee283db34c734
 SELECT last_name, hire_date FROM employees WHERE hire_date > '2007-01-01' ORDER BY hire_date DESC;
 
 ------------------------------------------------------------

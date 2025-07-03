@@ -42,10 +42,29 @@
 --   📅 Dates: GETDATE(), DATEADD(), DATEDIFF(), YEAR(), MONTH(), DAY()
 --   🔄 Conversion: CAST(), CONVERT()
 --   ⚙️ Conditional: CASE, IIF()
-<<<<<<< HEAD
 --   ⚙️ Group Functions: Count() ,Max() ,Min() ,Sum() ,AVG()
-=======
->>>>>>> 322f10a29734bb6fd4ed8c541cdee283db34c734
+-- 🔗 JOIN TYPES:
+
+--   🔄 INNER JOIN:
+--     Retrieves only the rows that have matching values in both tables.
+
+--   ⬅️ LEFT JOIN:
+--     Retrieves all rows from the left table, and the matched rows from the right table.
+--     If there is no match, the result is NULL on the right side.
+
+--   ➡️ RIGHT JOIN:
+--     Retrieves all rows from the right table, and the matched rows from the left table.
+--     If there is no match, the result is NULL on the left side.
+
+--   🔁 FULL OUTER JOIN:
+--     Retrieves all rows from both tables, whether they match or not.
+--     Unmatched rows from either side will return NULL for the other side.
+
+--   ✳️ CROSS JOIN:
+--     Returns the Cartesian product of the two tables.
+--     Every row from the first table is combined with every row from the second table.
+
+
 
 ------------------------------------------------------------
 -- 🔰 BEGINNER LEVEL TASKS
