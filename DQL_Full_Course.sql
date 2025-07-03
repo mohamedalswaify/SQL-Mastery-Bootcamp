@@ -57,6 +57,20 @@
 --     Returns the Cartesian product of the two tables.
 --     Every row from the first table is combined with every row from the second table.
 
+------------------------------------------------------------
+-- 📝 DML (Data Manipulation Language)
+------------------------------------------------------------
+
+-- 📘 WHAT IS DML?
+-- DML stands for Data Manipulation Language. It allows you to perform operations on the data stored in database tables.
+-- The most common DML statements are:
+
+--   ✅ INSERT: Add new records to a table
+--   📝 UPDATE: Modify existing records
+--   ❌ DELETE: Remove records from a table
+
+
+
 
 -- 🧠 This course demonstrates how to use SELECT in practical contexts, from basic retrieval to advanced logic and multi-table operations.
 ------------------------------------------------------------
@@ -214,6 +228,24 @@ FROM employees e
 CROSS JOIN jobs j;
 
 
+
+------------------------------------------------------------
+-- 🧪 DML EXAMPLES
+------------------------------------------------------------
+
+-- ✅ INSERT: Add a new employee
+INSERT INTO employees (first_name, last_name, job_id, hire_date, salary)
+VALUES ('Sara', 'Khaled', 'IT_PROG', GETDATE(), 6000);
+
+-- 📝 UPDATE: Increase salary by 10% for IT_PROG employees
+UPDATE employees
+SET salary = salary * 1.1
+WHERE job_id = 'IT_PROG';
+
+-- ❌ DELETE: Remove employees with salary less than 3000
+DELETE FROM employees
+WHERE salary < 3000;
+
 ------------------------------------------------------------
 -- 🧠 QUESTIONS & EXERCISES – BEGINNER LEVEL
 ------------------------------------------------------------
@@ -311,6 +343,17 @@ ORDER BY last_name DESC;
 SELECT d.location_id, street_address, city, state_province, country_id
 FROM departments d
 JOIN locations l ON d.location_id = l.location_id;
+
+
+------------------------------------------------------------
+-- ✅ TASKS
+------------------------------------------------------------
+
+-- Task 1: Insert a new department called "Innovation" with ID 300
+-- Task 2: Update the job title of employee ID 103 to 'DEV_LEAD'
+-- Task 3: Delete all employees hired before the year 2000
+-- Task 4: Insert 2 new employees with commission_pct values
+-- Task 5: Update all NULL commission_pct to 0 for sales employees
 
 ------------------------------------------------------------
 -- ✅ END OF COURSE

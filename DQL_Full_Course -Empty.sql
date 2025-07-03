@@ -64,6 +64,17 @@
 --     Returns the Cartesian product of the two tables.
 --     Every row from the first table is combined with every row from the second table.
 
+------------------------------------------------------------
+-- 📝 DML (Data Manipulation Language)
+------------------------------------------------------------
+
+-- 📘 WHAT IS DML?
+-- DML stands for Data Manipulation Language. It allows you to perform operations on the data stored in database tables.
+-- The most common DML statements are:
+
+--   ✅ INSERT: Add new records to a table
+--   📝 UPDATE: Modify existing records
+--   ❌ DELETE: Remove records from a table
 
 
 ------------------------------------------------------------
@@ -173,6 +184,17 @@
 -- Q10: Show last names starting with J, A, or M (uppercase + length)
 
 -- Q11: Show department address details using LOCATIONS
+
+------------------------------------------------------------
+-- ✅ TASKS
+------------------------------------------------------------
+
+-- Task 1: Insert a new department called "Innovation" with ID 300
+-- Task 2: Update the job title of employee ID 103 to 'DEV_LEAD'
+-- Task 3: Delete all employees hired before the year 2000
+-- Task 4: Insert 2 new employees with commission_pct values
+-- Task 5: Update all NULL commission_pct to 0 for sales employees
+
 
 ------------------------------------------------------------
 -- ✅ END OF COURSE (WITHOUT SOLUTIONS)
